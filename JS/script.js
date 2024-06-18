@@ -1,63 +1,29 @@
-        // Javascript works wiht or has a set of different values
-        // A word or multiple words wrapped in quotes is called a String value type
-        // A number is called a Number value type
-        //Primitive Value Types
-        var firstName = 'Nadav'; //string
-        var lastName = 'Glikshtern'
-        var age = 33; // Number
-        var isADev = true; // Boolean
-        var un = undefined; // Undefined is a value type that JS will give you when there is no declared or assigned value (Provided by JS)
-        var n = null; // Programmer's representation of nothing
-        var notAnumber = NaN; // Not A Number - This provided when you try to process a mathmatical equation and the result is not a valid number. (Provided by JS)
-        
-        var nothing;
 
-        // console.log (age); //Using a variable within your code is called a reference
+var firstName = 'Nadav'; //string
+var lastName = 'Glikshtern'
+var age = 33; // Number
+var names = ['John', 'Ann', 'Bob', 'Frank', 'Jane', 'Jimmy', 'Billy', 'Julie', 'Will']//Array
 
-        // age = age + 1;
-        // age += 5; // increase a variable by any numberical amount. 
-        age++; // Increase a variable by one
+//Comparison Operators - Return a boolean based on the result of youur comparison.
+// console.log(age > 30);
+// console.log(age < 30);
+// console.log(age == 30);
+// console.log(age == '33') // Double equals checks only value
+// console.log(age === 33); //Triple equals checks both value and type
 
-        // console.log(age);
+// console.log(age >= 33);
+// console.log(age <= 30);
 
-        age --; //Decrease number by one
+// console.log(age != 33)
+// console.log(age !== 33)
 
-        // console.log(age);
+// Falsey Values
+// 0, null, undefined, '',NaN, false,  
 
-        // age *= 5;
+// Logical Operators - Return a value on either the left side or the right side of the operator
+// Which value is equated is based on truth (truthy vs falsey)
+console.log(0 || null || '' || -5|| undefined);//if anyone of these is true, then perform some action
 
+console.log(1 && age && 100 && true); // Will stop at first false or last value in the chain
 
-        var fullName = firstName + ' ' + lastName;
-
-        var names = ['John', 'Ann', 'Bob', 'Frank', 'Jane', 'Jimmy', 'Billy', 'Julie', 'Will']//Array
-
-        var ages = [30, 24, 55, 99];
-
-        // names.push('Susan');
-
-        // names.unshift('Eli');
-
-        console.log(names);
-
-        // names.pop();        
-        // names.shift();
-
-        names.splice(5, 1);
-
-
-        console.log(names);
-
-
-
-
-
-        // console.log(names);
-
-        // console.log (names[names.length-1]);
-
-        // names[1] = 'Joe';
-
-        // ages[2] += 10;
-
-        // console.log(names);
-
+console.log(!'');
