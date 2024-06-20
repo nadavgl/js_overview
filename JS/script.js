@@ -1,29 +1,36 @@
+//Falsey Values
+//0, null, undefined,'',NaN
+
 
 var firstName = 'Nadav'; //string
 var lastName = 'Glikshtern'
-var age = 33; // Number
+var age = 18; // Number
 var names = ['John', 'Ann', 'Bob', 'Frank', 'Jane', 'Jimmy', 'Billy', 'Julie', 'Will']//Array
+var users = ['Bob', 99, 'Ann', 35,'Billy', 45]
+var oldEnough = age >= 21; //true
 
-//Comparison Operators - Return a boolean based on the result of youur comparison.
-// console.log(age > 30);
-// console.log(age < 30);
-// console.log(age == 30);
-// console.log(age == '33') // Double equals checks only value
-// console.log(age === 33); //Triple equals checks both value and type
+// If Conditionals - Trigger if the VALUE you pass into the parantheses is a truthy value
 
-// console.log(age >= 33);
-// console.log(age <= 30);
+//Conditionals statments can only take ONE value
 
-// console.log(age != 33)
-// console.log(age !== 33)
+if(firstName && lastName){
+    console.log('Received your full name!');
+} else if (!firstName) {
+    console.log('You must provide your first name!')
+} 
+else if (!lastName)  {
+    console.log('You must provide you last name')
+}
+else  {
+    console.log('You must provide you full name')
+}
 
-// Falsey Values
-// 0, null, undefined, '',NaN, false,  
+if (oldEnough) {
+    console.log ('Congrats come in!')
+// Web API - Browser Toolset that we can access from within our JS
+alert ('Welcome ' + firstName)
+}
 
-// Logical Operators - Return a value on either the left side or the right side of the operator
-// Which value is equated is based on truth (truthy vs falsey)
-console.log(0 || null || '' || -5|| undefined);//if anyone of these is true, then perform some action
-
-console.log(1 && age && 100 && true); // Will stop at first false or last value in the chain
-
-console.log(!'');
+else { console.log ('Get outta here kid!');
+alert ('No Chance...')
+}
