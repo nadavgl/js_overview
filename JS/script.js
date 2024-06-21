@@ -19,14 +19,84 @@
 
 // printValues (10, 'Allen', false);
 
-function printNames(names){
-    for (const name of names) {
-        console.log(name);
-    }
+// function printNames(names){
+//     for (const name of names) {
+//         console.log(name);
+//     }
 
+
+// }
+
+// printNames (['Bob','Jimmy','Julie'])
+
+// printNames ('Jake', 'Frank', 'Katie')
+
+
+
+/*
+Create a fucntion that takes 3 arguments
+-The first and second argument will be a number
+-The third argument will be a mathematical operator (+,-,*,/)
+
+Example: If the operator is a '+' then you will add the two numbers together and console log the sum
+
+*/
+
+// CAll your function 4 times with different numbers and operators to confirm that it is working correctly
+
+// Function calculate (num1, num2, operator) {
+
+//     if (operator === '+'){
+//         console.log(num1 + num2);
+//     }
+
+//     else if (operator === '-') {
+//         console.log(num1 - num2);
+//     }
+
+//     else if (operator === '*' ){
+//         console.log(num1 * num2);
+//     }
+
+//     else if (operator === '/'){
+//         console.log(num1 / num2);
+//     }
+
+// }
+
+// calculate(10,20, '+');
+
+function calculate(num1, num2, operator){
+    switch(operator){
+        case '+':
+            return num1 + num2;
+        case '-':
+            return num1 - num2;
+        case "*":
+            return num1 * num2;
+            
+        case '/':
+            return num1 / num2;
+        default:
+            console.log('You must provide a valid operator')
+
+    }
 
 }
 
-printNames (['Bob','Jimmy','Julie'])
+const sum = calculate (10,20, '+')
+console.log(sum)
 
-printNames ('Jake', 'Frank', 'Katie')
+// 
+
+function add(num1, num2){
+    return 'another'
+
+}
+
+const answer = add()
+
+console.log (answer)
+
+
+
