@@ -1,28 +1,32 @@
-//Falsey Values
-//0, null, undefined,'',NaN
+// // function myFirstFunc(){
+// //     console.log('function has been called');
 
 
+// // myFirstFunc();
 
-var names = ['John', 'Ann', 'Bob', 'Frank', 'Jane', 'Jimmy', 'Billy', 'Julie', 'Will']//Array
-var users = ['Bob', 99, 'Ann', 35,'Billy', 45]
+// // function add(num1, num2){
+// //     console.log(num1 + num2)
 
+// // }
 
-//Print a count from 1 to 10
+// // add(5, 10);
 
-// console.log(names[names.length - 1])
+// // add(30, 58)
 
-// for (var count = 1; count <= 10; count++) {
-//     console.log(count);
-
+// function printValues (num, name, boolean, another){
+//     console.log(another);
 // }
 
-for (var index = 0; index < names.length; index++){
-    console.log(users[index])
+// printValues (10, 'Allen', false);
+
+function printNames(names){
+    for (const name of names) {
+        console.log(name);
+    }
+
+
 }
 
-var count = 1;
+printNames (['Bob','Jimmy','Julie'])
 
-while (count <= 10){
-    console.log(count)
-    count ++;
-}
+printNames ('Jake', 'Frank', 'Katie')
