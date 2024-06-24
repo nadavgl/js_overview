@@ -1,47 +1,37 @@
-// const str = 'some-string';
-// const num = 10;
-// const bool = true;
-// const arr = ['John', 'Bob', 'Steve'];
-
-// const data = {
-//     name: 'Nadav',
-//     age: 33
-
-// };
-
-// data.name = 'Bob'
-// data.age ++
+const gatherBtn = document.querySelector('#gather-btn')
 
 
-// console.log(data.name);
+// When the page loads, show a button that the user clicks
+// When the button is clicked, show a prompt for first name, last name, and age
+// Store the 3 values to an object
+// Print the data object values to the browser window
 
-//Dot notation can ONLY be used on Obejcts
+function gatherInfo(){
+    let firstName, lastName, age;
+    let ask = true;
 
-const data = {
-    name: 'JD',
-    age: 44,
-    info: {
-      location: 'Atl',
-      hobbies: [
-        {
-          name: 'Fishing',
-          frequency: 'once every two weeks'
-        },
-        {
-          name: 'Pickleball',
-          frequency: 'once a week'
-        },
-        
-        {
-            name: 'Another',
-            frequency: 3
-        }
-      ]
+    while(ask) {
+          firstName = prompt ('Please enter your first nane')
+c
     }
-  };
 
-  console.log(data.info.hobbies[1,2].frequency)
+        if(!firstName){
+            continue;
 
+        }
 
+        lastName = prompt ('Please enter your last name')
+
+        if(!lastName){
+            continue
+        }
+    // if(!firstName || !lastName || !age){
+    //     alert('You must fill out all values');
+    //     return gatherInfo();
+    // }
+}
+
+gatherBtn.addEventListener('click', gatherInfo);
+    
 
 
