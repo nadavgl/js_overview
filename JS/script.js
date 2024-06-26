@@ -80,3 +80,8 @@ outputNotes();
 
 // Set up any necessary event listeners that should be listening when the page loads
 noteForm.addEventListener('submit', createNote);
+
+
+// Get a number (1-10) from the user  using a form (validate that the number is within the required)
+
+//Use the number to create a count down on the screen that counts from the number provided to zero 
